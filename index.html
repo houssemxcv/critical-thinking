@@ -231,5 +231,28 @@
             document.getElementById('contribBtn').innerText = translations[lang].btnText;
         }
     </script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAct5HgCmlJijNyJcTKnsxTFA1ZH1QCdHA",
+    authDomain: "critical-thinkingg.firebaseapp.com",
+    projectId: "critical-thinkingg",
+    storageBucket: "critical-thinkingg.firebasestorage.app",
+    messagingSenderId: "648097821338",
+    appId: "1:648097821338:web:f2e7e81cca9c177f086523",
+    measurementId: "G-YHZS6GKRKN"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
